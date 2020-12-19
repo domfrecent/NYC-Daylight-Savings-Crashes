@@ -1,10 +1,11 @@
 import pandas as pd
 from sodapy import Socrata
+import secrets
 
 
-my_app_token = "l1NSrq9nbaLnNhuR3uMuUJriL"
-username = "domfrecent@gmail.com"
-password = "Kkcciinn1144"
+my_app_token = secrets.my_app_token
+username = secrets.username
+password = secrets.password
 
 # Example authenticated client (needed for non-public datasets):
 client = Socrata("data.cityofnewyork.us",
